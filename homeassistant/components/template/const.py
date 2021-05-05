@@ -15,6 +15,7 @@ PLATFORMS = [
     Platform.BINARY_SENSOR,
     Platform.BUTTON,
     Platform.COVER,
+    Platform.CLIMATE,
     Platform.FAN,
     Platform.LIGHT,
     Platform.LOCK,
