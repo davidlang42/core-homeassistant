@@ -176,7 +176,7 @@ class TemplateClimate(TemplateEntity, ClimateEntity):
         self.entity_id = async_generate_entity_id(
             ENTITY_ID_FORMAT, device_id, hass=hass
         )
-        self._name = friendly_name
+        self._attr_name = friendly_name
 
         self._template = state_template
         self._hvac_action_template = hvac_action_template
@@ -205,13 +205,13 @@ class TemplateClimate(TemplateEntity, ClimateEntity):
             )
             self._supported_features |= SUPPORT_TARGET_TEMPERATURE
 
-        self._state = None
+        self._attr_state = None
         self._hvac_action = None
         self._fan_mode = None
         self._temperature = None
         self._current_temperature = None
 
-        self._unique_id = unique_id
+        self._attr_unique_id = unique_id
         self._temperature_unit = hass.config.units.temperature_unit
 
         self._hvac_modes = hvac_modes
@@ -222,24 +222,9 @@ class TemplateClimate(TemplateEntity, ClimateEntity):
         self._max_temp = max_temp
 
     @property
-    def name(self):
-        """Return the display name of this climate."""
-        return self._name
-
-    @property
-    def unique_id(self):
-        """Return the unique id of this climate."""
-        return self._unique_id
-
-    @property
     def supported_features(self) -> int:
         """Flag supported features."""
         return self._supported_features
-
-    @property
-    def hvac_mode(self):
-        """Return current operation (state)."""
-        return self._state
 
     @property
     def hvac_action(self):
@@ -306,7 +291,7 @@ class TemplateClimate(TemplateEntity, ClimateEntity):
             )
             return
 
-        self._state = hvac_mode
+        self._attr_state = hvac_mode
 
         await self._set_hvac_mode_script.async_run(
             {ATTR_HVAC_MODE: hvac_mode}, context=self._context
@@ -353,18 +338,18 @@ class TemplateClimate(TemplateEntity, ClimateEntity):
     def _update_state(self, result):
         super()._update_state(result)
         if isinstance(result, TemplateError):
-            self._state = None
+            self._attr_state = None
         elif result in self.hvac_modes:
-            self._state = result
+            self._attr_state = result
         elif result in [STATE_UNAVAILABLE, STATE_UNKNOWN]:
-            self._state = None
+            self._attr_state = None
         else:
             _LOGGER.error(
                 "Received invalid state: %s. Expected: %s",
                 result,
                 ", ".join(self.hvac_modes),
             )
-            self._state = None
+            self._attr_state = None
 
     async def async_added_to_hass(self):
         """Register callbacks."""
