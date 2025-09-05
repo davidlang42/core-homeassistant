@@ -27,6 +27,15 @@
   },
   "entity": {
     "binary_sensor": {
+      "closed_opened": {
+        "name": "Opened"
+      },
+      "open_inside": {
+        "name": "Opened from inside"
+      },
+      "lock_motor_state": {
+        "name": "Lock motor state"
+      },
       "methane": {
         "name": "Methane"
       },
@@ -513,6 +522,9 @@
       }
     },
     "sensor": {
+      "alarm_lock": {
+        "name": "Alarm lock"
+      },
       "battery": {
         "name": "[%key:component::sensor::entity_component::battery::name%]"
       },

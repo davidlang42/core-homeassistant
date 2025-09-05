@@ -261,6 +261,22 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
             state_class=SensorStateClass.MEASUREMENT,
         ),
     ),
+    # K5 Smart Lock Box
+    # https://developer.tuya.com/en/docs/app-development/blelock?id=Ka5ztruz29ekt
+    "jtmspro": {
+        TuyaSensorEntityDescription(
+            key=DPCode.ALARM_LOCK,
+            translation_key="alarm_lock",
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.RESIDUAL_ELECTRICITY,
+            translation_key="battery",
+            device_class=SensorDeviceClass.BATTERY,
+            entity_category=EntityCategory.DIAGNOSTIC,
+            state_class=SensorStateClass.MEASUREMENT,
+        ),
+        *BATTERY_SENSORS,
+    },
     # Pet Fountain
     # https://developer.tuya.com/en/docs/iot/s?id=K9gf48r0as4ln
     "cwysj": (

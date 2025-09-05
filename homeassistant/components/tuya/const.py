@@ -200,6 +200,14 @@ class DPCode(StrEnum):
     ECO2 = "eco2"
     EDGE_BRUSH = "edge_brush"
     ELECTRICITY_LEFT = "electricity_left"
+    RESIDUAL_ELECTRICITY = "residual_electricity"
+    ALARM_LOCK = "alarm_lock"
+    OPEN_INSIDE = "open_inside"
+    CLOSED_OPENED = "closed_opened"
+    LOCK_MOTOR_STATE = "lock_motor_state"
+
+    MANUAL_LOCK = "manual_lock"
+
     FAN_BEEP = "fan_beep"  # Sound
     FAN_COOL = "fan_cool"  # Cool wind
     FAN_DIRECTION = "fan_direction"  # Fan direction
