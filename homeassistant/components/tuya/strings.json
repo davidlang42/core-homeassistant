@@ -522,8 +522,149 @@
       }
     },
     "sensor": {
-      "alarm_lock": {
-        "name": "Alarm lock"
+      "unlock_method_create": {
+        "name": "unlock_method_create"
+      },
+      "unlock_method_delete":  {
+        "name": "unlock_method_delete"
+      },
+      "unlock_method_modify":  {
+        "name": "unlock_method_modify"
+      },
+      "residual_electricity":  {
+        "name": "residual_electricity"
+      },
+      "unlock_fingerprint":  {
+        "name": "unlock_fingerprint"
+      },
+      "unlock_password":  {
+        "name": "unlock_password"
+      },
+      "unlock_dynamic":  {
+        "name": "unlock_dynamic"
+      },
+      "unlock_card":  {
+        "name": "unlock_card"
+      },
+      "unlock_key":  {
+        "name": "unlock_key"
+      },
+      "open_inside":  {
+        "name": "open_inside"
+      },
+      "unlock_ble":  {
+        "name": "unlock_ble"
+      },
+      "lock_record":  {
+        "name": "lock_record"
+      },
+      "alarm_lock":  {
+        "name": "alarm_lock"
+      },
+      "hijack":  {
+        "name": "hijack"
+      },
+      "doorbell":  {
+        "name": "doorbell"
+      },
+      "message":  {
+        "name": "message"
+      },
+      "language":  {
+        "name": "language"
+      },
+      "beep_volume":  {
+        "name": "beep_volume"
+      },
+      "automatic_lock":  {
+        "name": "automatic_lock"
+      },
+      "unlock_switch":  {
+        "name": "unlock_switch"
+      },
+      "auto_lock_time":  {
+        "name": "auto_lock_time"
+      },
+      "closed_opened":  {
+        "name": "closed_opened"
+      },
+      "rtc_lock":  {
+        "name": "rtc_lock"
+      },
+      "manual_lock":  {
+        "name": "manual_lock"
+      },
+      "lock_motor_state":  {
+        "name": "lock_motor_state"
+      },
+      "temporary_password_creat":  {
+        "name": "temporary_password_creat"
+      },
+      "temporary_password_delete":  {
+        "name": "temporary_password_delete"
+      },
+      "temporary_password_modify":  {
+        "name": "temporary_password_modify"
+      },
+      "synch_method":  {
+        "name": "synch_method"
+      },
+      "unlock_temporary":  {
+        "name": "unlock_temporary"
+      },
+      "remote_no_dp_key":  {
+        "name": "remote_no_dp_key"
+      },
+      "unlock_phone_remote":  {
+        "name": "unlock_phone_remote"
+      },
+      "unlock_voice_remote":  {
+        "name": "unlock_voice_remote"
+      },
+      "password_offline_time":  {
+        "name": "password_offline_time"
+      },
+      "unlock_offline_clear_single":  {
+        "name": "unlock_offline_clear_single"
+      },
+      "unlock_offline_clear":  {
+        "name": "unlock_offline_clear"
+      },
+      "unlock_offline_pd":  {
+        "name": "unlock_offline_pd"
+      },
+      "record":  {
+        "name": "record"
+      },
+      "check_code_set":  {
+        "name": "check_code_set"
+      },
+      "ble_unlock_check":  {
+        "name": "ble_unlock_check"
+      },
+      "unlock_record_check":  {
+        "name": "unlock_record_check"
+      },
+      "remote_pd_setkey_check":  {
+        "name": "remote_pd_setkey_check"
+      },
+      "unlock_double_kit":  {
+        "name": "unlock_double_kit"
+      },
+      "unlock_ble_ibeacon":  {
+        "name": "unlock_ble_ibeacon"
+      },
+      "ibeacon_scan_mode":  {
+        "name": "ibeacon_scan_mode"
+      },
+      "rssi_sensitivity_level":  {
+        "name": "rssi_sensitivity_level"
+      },
+      "autolock_delay_level":  {
+        "name": "autolock_delay_level"
+      },
+      "ibeacon_switch": {
+        "name": "ibeacon_switch"
       },
       "battery": {
         "name": "[%key:component::sensor::entity_component::battery::name%]"
