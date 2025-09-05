@@ -265,6 +265,46 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
     # https://developer.tuya.com/en/docs/app-development/blelock?id=Ka5ztruz29ekt
     "jtmspro": {
         TuyaSensorEntityDescription(
+            key=DPCode.UNLOCK_PASSWORD,
+            translation_key="unlock_password",
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.UNLOCK_DYNAMIC,
+            translation_key="unlock_dynamic",
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.UNLOCK_CARD,
+            translation_key="unlock_card",
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.UNLOCK_KEY,
+            translation_key="unlock_key",
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.UNLOCK_BLE,
+            translation_key="unlock_ble",
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.UNLOCK_TEMPORARY,
+            translation_key="unlock_temporary",
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.UNLOCK_VOICE_REMOTE,
+            translation_key="unlock_voice_remote",
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.UNLOCK_PHONE_REMOTE,
+            translation_key="unlock_phone_remote",
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.UNLOCK_BLE_IBEACON,
+            translation_key="unlock_ble_ibeacon",
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.UNLOCK_FINGERPRINT,
+            translation_key="unlock_fingerprint",
+        ),
+        TuyaSensorEntityDescription(
             key=DPCode.ALARM_LOCK,
             translation_key="alarm_lock",
         ),

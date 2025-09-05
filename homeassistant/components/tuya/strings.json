@@ -27,12 +27,6 @@
   },
   "entity": {
     "binary_sensor": {
-      "closed_opened": {
-        "name": "Opened"
-      },
-      "open_inside": {
-        "name": "Opened from inside"
-      },
       "lock_motor_state": {
         "name": "Lock motor state"
       },
@@ -522,9 +516,6 @@
       }
     },
     "sensor": {
-      "alarm_lock": {
-        "name": "Alarm lock"
-      },
       "battery": {
         "name": "[%key:component::sensor::entity_component::battery::name%]"
       },
@@ -787,6 +778,39 @@
       },
       "supply_frequency": {
         "name": "Supply frequency"
+      },
+      "alarm_lock": {
+        "name": "Error alarm"
+      },
+      "unlock_password": {
+        "name": "Unlock count by password"
+      },
+      "unlock_dynamic": {
+        "name": "Unlock count by ?"
+      },
+      "unlock_card": {
+        "name": "Unlock count by card"
+      },
+      "unlock_key": {
+        "name": "Unlock count by key"
+      },
+      "unlock_ble": {
+        "name": "Unlock count by BLE"
+      },
+      "unlock_temporary": {
+        "name": "Unlock count by temporary code"
+      },
+      "unlock_phone_remote": {
+        "name": "Remote unlock count by phone"
+      },
+      "unlock_voice_remote": {
+        "name": "Remote unlock count by voice"
+      },
+      "unlock_ble_ibeacon": {
+        "name": "Unlock count by iBeacon"
+      },
+      "unlock_fingerprint": {
+        "name": "Unlock count by fingerprint"
       }
     },
     "switch": {

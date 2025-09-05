@@ -116,16 +116,6 @@ BINARY_SENSORS: dict[str, tuple[TuyaBinarySensorEntityDescription, ...]] = {
     # https://developer.tuya.com/en/docs/app-development/blelock?id=Ka5ztruz29ekt
     "jtmspro": {
         TuyaBinarySensorEntityDescription(
-            key=DPCode.OPEN_INSIDE,
-            device_class=BinarySensorDeviceClass.DOOR,
-            translation_key="open_inside",
-        ),
-        TuyaBinarySensorEntityDescription(
-            key=DPCode.CLOSED_OPENED,
-            device_class=BinarySensorDeviceClass.DOOR,
-            translation_key="closed_opened",
-        ),
-        TuyaBinarySensorEntityDescription(
             key=DPCode.LOCK_MOTOR_STATE,
             translation_key="lock_motor_state",
         ),

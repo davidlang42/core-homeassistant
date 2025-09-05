@@ -1,15 +1,6 @@
 {
   "entity": {
     "binary_sensor": {
-      "open_inside": {
-        "default": "mdi:molecule-co"
-      },
-      "closed_opened": {
-        "default": "mdi:molecule-co2"
-      },
-      "lock_motor_state": {
-        "default": "mdi:information"
-      },
       "carbon_monoxide": {
         "default": "mdi:molecule-co"
       },
@@ -27,6 +18,9 @@
       },
       "valve": {
         "default": "mdi:pipe-valve"
+      },
+      "lock_motor_state": {
+        "default": "mdi:lock"
       }
     },
     "button": {

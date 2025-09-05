@@ -102,6 +102,7 @@ class DPCode(StrEnum):
     AIR_QUALITY = "air_quality"
     AIR_QUALITY_INDEX = "air_quality_index"
     ALARM_DELAY_TIME = "alarm_delay_time"
+    ALARM_LOCK = "alarm_lock"
     ALARM_MESSAGE = "alarm_message"
     ALARM_MSG = "alarm_msg"
     ALARM_SWITCH = "alarm_switch"  # Alarm switch
@@ -200,14 +201,6 @@ class DPCode(StrEnum):
     ECO2 = "eco2"
     EDGE_BRUSH = "edge_brush"
     ELECTRICITY_LEFT = "electricity_left"
-    RESIDUAL_ELECTRICITY = "residual_electricity"
-    ALARM_LOCK = "alarm_lock"
-    OPEN_INSIDE = "open_inside"
-    CLOSED_OPENED = "closed_opened"
-    LOCK_MOTOR_STATE = "lock_motor_state"
-
-    MANUAL_LOCK = "manual_lock"
-
     FAN_BEEP = "fan_beep"  # Sound
     FAN_COOL = "fan_cool"  # Cool wind
     FAN_DIRECTION = "fan_direction"  # Fan direction
@@ -260,6 +253,7 @@ class DPCode(StrEnum):
     LIQUID_LEVEL_PERCENT = "liquid_level_percent"
     LIQUID_STATE = "liquid_state"
     LOCK = "lock"  # Lock / Child lock
+    LOCK_MOTOR_STATE = "lock_motor_state"
     MACH_OPERATE = "mach_operate"
     MANUAL_FEED = "manual_feed"
     MASTER_MODE = "master_mode"  # alarm mode
@@ -321,6 +315,7 @@ class DPCode(StrEnum):
     RESET_FILTER = "reset_filter"
     RESET_MAP = "reset_map"
     RESET_ROLL_BRUSH = "reset_roll_brush"
+    RESIDUAL_ELECTRICITY = "residual_electricity"
     REVERSE_ENERGY_TOTAL = "reverse_energy_total"
     ROLL_BRUSH = "roll_brush"
     SEEK = "seek"
@@ -430,6 +425,16 @@ class DPCode(StrEnum):
     TVOC = "tvoc"
     UPPER_TEMP = "upper_temp"
     UPPER_TEMP_F = "upper_temp_f"
+    UNLOCK_PASSWORD = "unlock_password"
+    UNLOCK_DYNAMIC = "unlock_dynamic"
+    UNLOCK_CARD = "unlock_card"
+    UNLOCK_KEY = "unlock_key"
+    UNLOCK_BLE = "unlock_ble"
+    UNLOCK_TEMPORARY = "unlock_temporary"
+    UNLOCK_PHONE_REMOTE = "unlock_phone_remote"
+    UNLOCK_VOICE_REMOTE = "unlock_voice_remote"
+    UNLOCK_BLE_IBEACON = "unlock_ble_ibeacon"
+    UNLOCK_FINGERPRINT = "unlock_fingerprint"
     UV = "uv"  # UV sterilization
     UV_INDEX = "uv_index"
     UV_RUNTIME = "uv_runtime"  # UV runtime
